@@ -1,3 +1,29 @@
-h1 {
-    color: red;
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav-bar{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+.nav-bar li {
+    display: inline-block;
+    padding: 20px;
+}
+.nav-bar li a{
+    font-transform: uppercase;
+    font-size: 14px;
+    color: #16a085;
+}
+.main-image{
+
+}
+.main-text{
+    
+}
+.main-button{
+    display: block;
 }
