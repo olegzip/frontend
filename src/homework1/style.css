@@ -1,29 +1,67 @@
 .container{
-    width: 1200px;
+    width: 1280px;
     margin: 0 auto;
-}
-.nav-bar{
-    list-style-type: none;
+    letter-spacing: 2px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 1px solid rgb(245, 246, 247);
+}
+.navbar{
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 1px solid black;
 }
-.nav-bar li {
+.navbar li {
     display: inline-block;
-    padding: 20px;
+    padding: 35px;
+    text-transform: uppercase;
 }
-.nav-bar li a{
-    font-transform: uppercase;
-    font-size: 14px;
+.navbar li a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
     color: #16a085;
 }
 .main-image{
-
+    width: 1280px;
+    height: 790px;
+    background-image: url("top-img.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 56px;
 }
 .main-text{
-    
+    width: 1280px;
+    margin: auto;
+    font-size: 16px;
+    padding: 17px;
 }
-.main-button{
+.main-text h2{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+.main-text p{
+    font-size: 16px;
+    margin: 0 110px 40px 110px;
+}
+.get-started-button{
+    margin: auto;
+    border-radius: 3px;
+    background-color:  #16a085;
+    width: 192px;
+    height: 51px;
+}
+.get-started-button a{
     display: block;
+    /*МИЛИЦЯ(укр. - примечание автора)*/
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.footer{
+    margin: 110px;
+    text-align: right;
 }
