@@ -48,26 +48,24 @@ header a{
     border: 1px solid black;
     float: left;
     font-size: 27px;
-    overflow: hidden;
 }
 .navbar-left ul{
     width: 340px;
     margin: 0;
     padding: 0;
-    display: block;
+    display: inline-block;
+    overflow: hidden;
 }
 .navbar-left a{
     color: rgb(71, 87, 99);
     display: block;
-    width: 340px;
-    padding: 25px 40px;
-    box-sizing: border-box;
+    width: 338px;
+    padding: 24px 40px;
 }
 .navbar-left a:hover{
     color: black;
     background-color: rgb(220, 220, 220);
     padding-left: 70px;
-    box-sizing: border-box;
 }
 .main-logo{
     float: right;
