@@ -30,6 +30,8 @@ header a{
     margin-bottom: 45px;
 }
 .navbar-main a{
+    border-left: 0.5px solid transparent;
+    border-right: 0.5px solid transparent;
     text-align: center;
     padding: 25px 40px;
     color: white;
