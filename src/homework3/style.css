@@ -17,10 +17,13 @@
     left: 155px;
     margin-top: 49px;
 }
+.logo:hover{
+    background-color: rgb(242, 101, 34);
+    color: rgb(242, 101, 34);
+}
 .logo img{
     width: 46px;
     height: 44px;
-    background-color: green;
 }
 .logo h2{
     position: absolute;
@@ -47,34 +50,53 @@
     margin: 0;
     text-align: right;
     float: right;
-    top: 40px;
-    right: 148px;
+    top: 35px;
+    right: 153px;
 }
 .contacts h2{
     font-size: 18px;
 }
-.gallery{
-    position: relative;
-    top: 100px;
+ul {
     font-size: 18px;
     text-align: center;
-    border: 1px solid black;
-}
-.gallery ul {
+    position: relative;
+    box-sizing: border-box;
     float: left;
     padding: 0;
-    margin: 0;
+    margin: 47px 65px 0 150px;
     list-style: none;
     overflow: auto;
 }
-.gallery li {
+li {
     float: left;
-    width: 33%;
+    margin: 0;
+}
+figure {
+    margin: 0;
+    margin-right: 69px;
+}
+figure>figcaption{
+    padding-top: 22px;
+    padding-bottom: 58px;
+}
+figure:hover{
+    color: rgb(242, 101, 34);
 }
 /*.gallery li:last-child {*/
     /*margin-right: 0;*/
 /*}*/
 .footer{
-    position: absolute;
-    top: 700px;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
+}
+.hidden-block{
+    display: inline-block;
+    width: 26%;
+    background-color: rgb(242, 101, 34);
 }
