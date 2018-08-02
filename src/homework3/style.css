@@ -1,14 +1,18 @@
 .container{
     font-family: Verdana regular, sans-serif;
+    color: white;
     margin: auto;
     width: 1366px;
     height: 768px;
     position: relative;
-/*    background-image: url("background.jpg");*/
+    background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
-    border: 1px solid black;
+}
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
 }
 .logo{
     width: 165px;
@@ -17,13 +21,20 @@
     left: 155px;
     margin-top: 49px;
 }
-.logo:hover{
-    background-color: rgb(242, 101, 34);
-    color: rgb(242, 101, 34);
-}
-.logo img{
+.logo div{
     width: 46px;
     height: 44px;
+    background-image: url("logo.png");
+}
+.logo a{
+    color: white;
+}
+.logo:hover div{
+    background-image: url("logo-orange.png");
+    color: rgb(242, 101, 34);
+}
+.logo:hover a{
+    color: rgb(242, 101, 34);
 }
 .logo h2{
     position: absolute;
@@ -53,8 +64,8 @@
     top: 35px;
     right: 153px;
 }
-.contacts h2{
-    font-size: 18px;
+.contacts h3{
+    font-weight: 300;
 }
 ul {
     font-size: 18px;
@@ -65,7 +76,6 @@ ul {
     padding: 0;
     margin: 47px 65px 0 150px;
     list-style: none;
-    overflow: auto;
 }
 li {
     float: left;
@@ -79,24 +89,60 @@ figure>figcaption{
     padding-top: 22px;
     padding-bottom: 58px;
 }
+figure div{
+    position: relative;
+    box-sizing: border-box;
+}
 figure:hover{
     color: rgb(242, 101, 34);
 }
-/*.gallery li:last-child {*/
-    /*margin-right: 0;*/
-/*}*/
+.show-details{
+    background-color: rgb(242, 101, 34);
+    width: 307px;
+    height: 63px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -63px;
+    box-sizing: border-box;
+    color: white;
+}
+.show-details p{
+    margin: 0;
+    position: absolute;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 21px;
+    padding-top: 16px;
+}
+.show-details div{
+    position: absolute;
+    top: 30px;
+    left: 21px;
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+
+}
+.show-details a{
+    position: absolute;
+    top: 30px;
+    right: 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+figure:hover .show-details{
+    margin-bottom: 0;
+    transition: margin 0.5s linear;
+}
+.img-border{
+    height: 200px;
+    box-shadow: 1px 17px 24px 1px black;
+    overflow: hidden;
+}
 .footer{
     margin: 0;
     text-align: center;
     font-size: 12px;
-}
-.clearfix{
-    content: "";
-    clear: both;
-    display: table;
-}
-.hidden-block{
-    display: inline-block;
-    width: 26%;
-    background-color: rgb(242, 101, 34);
+    font-weight: 400;
 }
