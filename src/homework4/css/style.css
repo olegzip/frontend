@@ -1,0 +1,13 @@
+.body{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+}
+.container{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
