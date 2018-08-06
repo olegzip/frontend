@@ -1,13 +1,51 @@
-.body{
+body{
+    box-sizing: border-box;
     background-image: url("../img/background.jpg");
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+
 }
 .container{
-    background-image: url("../img/background.jpg");
-    background-position: center;
+
 }
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+.header{
+    margin: 0;
+    padding: 0;
+    height: 54px;
+    width: 100%;
+    background-color: black;
+}
+#logo{
+    width: 105px; height: 15px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+
+
+
+
+.bg-ic_forum {
+    width: 28px; height: 20px;
+    background: url('../img/css_sprites.png') -10px -45px;
+}
+.bg-ic_journey {
+    width: 20px; height: 20px;
+    background: url('../img/css_sprites.png') -58px -45px;
+}
+.bg-line {
+    width: 1px; height: 19px;
+    background: url('../img/css_sprites.png') -98px -45px;
+}
+.bg-JOURNEY {
+    width: 105px; height: 15px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+.bg-ic_caledar {
+    width: 19px; height: 19px;
+    background: url('../img/css_sprites.png') -10px -85px;
 }
