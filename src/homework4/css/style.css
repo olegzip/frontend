@@ -1,10 +1,10 @@
 body{
     box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, sans-serif;
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-
 }
 .container{
 
@@ -15,37 +15,95 @@ body{
     display: table;
 }
 .header{
-    margin: 0;
+    position: relative;
+    margin-bottom: 65px;
     padding: 0;
     height: 54px;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.41);
 }
-#logo{
+.logo{
+    position: absolute;
+    margin-top: 20px;
+    left: 6%;
+    display: inline-block;
     width: 105px; height: 15px;
     background: url('../img/css_sprites.png') -10px -10px;
 }
-
-
-
-
-.bg-ic_forum {
-    width: 28px; height: 20px;
+.logo:hover{
     background: url('../img/css_sprites.png') -10px -45px;
 }
-.bg-ic_journey {
-    width: 20px; height: 20px;
-    background: url('../img/css_sprites.png') -58px -45px;
+.navbar{
+    float: right;
 }
-.bg-line {
-    width: 1px; height: 19px;
-    background: url('../img/css_sprites.png') -98px -45px;
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-.bg-JOURNEY {
-    width: 105px; height: 15px;
-    background: url('../img/css_sprites.png') -10px -10px;
+.navbar li{
+    margin-top: 20px;
+    display: inline-block;
+    padding-right: 25px;
 }
-.bg-ic_caledar {
+.log-in{
+    margin-top: 20px;
+    float: right;
+    padding-right: 75px;
+    font-size: 14px;
+    color: white;
+}
+.log-in a{
+    color: rgb(60, 184, 120);
+    text-decoration: none;
+}
+.log-in a:hover{
+    text-decoration: underline;
+}
+#nav-icon-calendar{
     width: 19px; height: 19px;
-    background: url('../img/css_sprites.png') -10px -85px;
+    background: url('../img/css_sprites.png') -10px -120px;
+}
+#nav-icon-forum{
+    width: 28px; height: 20px;
+    background: url('../img/css_sprites.png') -10px -80px;
+}
+#nav-icon-compass{
+    width: 20px; height: 20px;
+    background: url('../img/css_sprites.png') -135px -10px;
+}
+#nav-line{
+    float: right;
+    margin-top: 20px;
+    padding-right: 24px;
+    width: 1px; height: 19px;
+    background: url('../img/css_sprites.png') -106px -80px;
+}
+#nav-icon-calendar:hover{
+    background: url('../img/css_sprites.png') -49px -120px;
+}
+#nav-icon-forum:hover{
+    background: url('../img/css_sprites.png') -58px -80px;
+}
+#nav-icon-compass:hover{
+    background: url('../img/css_sprites.png') -135px -50px;
+}
+.main{
+    box-sizing: border-box;
+    position: relative;
+    border: 5px solid red;
+    margin: 0 auto;
+}
+.log-or-register{
+    position: relative;
+    width: 445px;
+    height: 585px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.form-header{
+    padding-top: 30px;
+    font-size: 20px;
 }
