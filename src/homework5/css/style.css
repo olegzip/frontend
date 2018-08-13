@@ -1,0 +1,34 @@
+.container{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(55, 71, 101);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+}
+.table-wrapper{
+    margin: 24px 30px 31px 30px;
+    width: 100%;
+    position: relative;
+}
+table{
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+    background-color: white;
+}
+th{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid red;
+    max-height: 4.4rem;
+}
+tr{
+
+}
