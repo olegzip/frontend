@@ -6,50 +6,47 @@
     display: flex;
     align-items: center;
     justify-items: center;
-
 }
 .table-wrapper{
     margin: 24px 30px 31px 30px;
     width: 100%;
-    position: relative;
 }
 table{
     text-transform: uppercase;
     text-align: center;
-    border: 1px solid gray;
     border-collapse: collapse;
-    width: 100%;
+    /*width: 100%;*/
     font-family: 'Arimo', sans-serif;
     background-color: white;
+    margin: auto;
+    color: rgb(72, 72, 72);
 }
-#col2{
-    border-left: 0.2rem solid rgb(228, 228, 228);
-    border-right: 0.2rem solid rgb(228, 228, 228);
-    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
-
+#col-first{
+    width: 310px;
+    border-right: 2px solid rgb(228, 228, 228);
 }
-#col3{
-    border-right: 0.2rem solid rgb(228, 228, 228);
-
+#col{
+    width: 277px;
+    border-right: 2px solid rgb(228, 228, 228);
 }
-
-table colgroup col{
-    width: 26%;
+#col-last{
+    width: 277px;
+    border-left: 2px solid rgb(228, 228, 228);
 }
-table colgroup:first-child{
-    width: 23%;
+.contact-bgr{
+    background-color: rgb(70, 70, 70);
 }
-colgroup>col{
-
+.standart-bgr{
+    background-color: rgb(138, 196, 45);
 }
-td:nth-of-type(2){
- background-color: red;
+.ultimate-bgr{
+    background-color: rgb(240, 73, 85);
+}
+.premium-bgr{
+    background-color: rgb(26, 129, 125);
 }
 /*TABLE HEADER:*/
 
-thead th{
-
-}
 thead tr:nth-child(even){
     height: 86px;
 }
@@ -62,7 +59,6 @@ thead tr:nth-child(odd){
 tbody tr:nth-child(even){
     height: 69px;
     background-color: rgb(228, 228, 228);
-
 }
 tbody tr:nth-child(odd){
     height: 69px;
@@ -78,5 +74,13 @@ tfoot td{
 tfoot tr{
     height: 109px;
 }
-
-
+tfoot tr button{
+    width: 192px;
+    height: 49px;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: inherit;
+    font-weight: bold;
+    color: white;
+    border-radius: 7px;
+}
