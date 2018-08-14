@@ -22,13 +22,61 @@ table{
     font-family: 'Arimo', sans-serif;
     background-color: white;
 }
-th{
-    border: 1px solid black;
-}
-td{
-    border: 1px solid red;
-    max-height: 4.4rem;
-}
-tr{
+#col2{
+    border-left: 0.2rem solid rgb(228, 228, 228);
+    border-right: 0.2rem solid rgb(228, 228, 228);
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 
 }
+#col3{
+    border-right: 0.2rem solid rgb(228, 228, 228);
+
+}
+
+table colgroup col{
+    width: 26%;
+}
+table colgroup:first-child{
+    width: 23%;
+}
+colgroup>col{
+
+}
+td:nth-of-type(2){
+ background-color: red;
+}
+/*TABLE HEADER:*/
+
+thead th{
+
+}
+thead tr:nth-child(even){
+    height: 86px;
+}
+thead tr:nth-child(odd){
+    height: 71px;
+}
+
+/*TABLE BODY:*/
+
+tbody tr:nth-child(even){
+    height: 69px;
+    background-color: rgb(228, 228, 228);
+
+}
+tbody tr:nth-child(odd){
+    height: 69px;
+    background-color: rgb(242, 242, 242);
+}
+
+/*TABLE FOOTER (LAST ROW):*/
+
+tfoot td{
+    background-color: beige;
+    height: 30px;
+}
+tfoot tr{
+    height: 109px;
+}
+
+
