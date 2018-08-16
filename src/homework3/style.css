@@ -105,6 +105,7 @@ figure:hover{
     margin-bottom: -63px;
     box-sizing: border-box;
     color: white;
+    transition: margin 0.5s linear;
 }
 .show-details p{
     margin: 0;

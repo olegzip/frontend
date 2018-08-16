@@ -2,21 +2,27 @@ body{
     box-sizing: border-box;
     margin: 0;
     font-family: Verdana, sans-serif;
-    background-image: url("../img/background.jpg");
+    /*background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
-.container{
-
-}
-.clearfix::after {
+.clearfix{
     content: "";
     clear: both;
     display: table;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .header{
     position: relative;
-    margin-bottom: 65px;
+    /*margin-bottom: 65px;*/
     padding: 0;
     height: 54px;
     width: 100%;
@@ -89,21 +95,48 @@ body{
 #nav-icon-compass:hover{
     background: url('../img/css_sprites.png') -135px -50px;
 }
-.main{
+.form-wrapper{
     box-sizing: border-box;
-    position: relative;
-    border: 5px solid red;
-    margin: 0 auto;
+    margin: auto;
 }
 .log-or-register{
-    position: relative;
     width: 445px;
     height: 585px;
-    margin: auto;
     background-color: white;
     border-radius: 10px;
+    display: flex;
 }
 .form-header{
-    padding-top: 30px;
+    width: 100%;
+    height: 20px;
+    margin-top: 30px;
+   /* border-left: 18px solid rgb(60, 184, 120);*/
+    position: relative;
+}
+.green-quad{
+    display: inline-block;
+    float: left;
+    margin-top: 3px;
+    height: 18px;
+    width: 18px;
+    background-color: rgb(60, 184, 120);
+}
+.form-header p{
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding-left: 42px;
     font-size: 20px;
+}
+.form-header a{
+    float: right;
+    padding-right: 60px;
+}
+.facebook-btn{
+    width: 157px;
+    height: 46px;
+}
+.google-btn{
+    width: 157px;
+    height: 46px;
 }
