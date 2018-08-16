@@ -1,98 +1,41 @@
-* {
-    box-sizing: border-box;
-    height: 100%;
-    margin: 0;
-    color: white;
-}
-
-.global-box {
-    border: 3px solid blue;
-    background: beige;
-    background-image: url("img/background.jpg");
-    background-size: cover;
-    /*overflow: hidden;*/
-}
-
-.header-wrapper {
-    border: 3px solid yellow;
-    height: 55px;
-    position: relative;
-}
-
-.logo-JOURNEY{
-    display: inline-block;
-}
-
-#logo{
-    width: 105px;
-    height: 15px;
-    background: url('img/css_sprites.png') -10px -10px;
-}
-nav > ul{
-    position: relative;
-    display: inline-block;
-    list-style-type: none;
+body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    float: right;
+    box-sizing: border-box;
 }
-nav > li{
-    position: absolute;
-
-    margin: auto;
-    display: inline;
-    padding-right: 25px;
-    border: 3px solid black;
-}
-nav > li > a{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-
-
-#nav-icon-calendar{
-    width: 19px; height: 19px;
-    background: url('img/css_sprites.png') -10px -120px;
-}
-#nav-icon-forum{
-    width: 28px; height: 20px;
-    background: url('img/css_sprites.png') -10px -80px;
-}
-#nav-icon-compass{
-    width: 20px; height: 20px;
-    background: url('img/css_sprites.png') -135px -10px;
-}
-
-
-
-
-
-
-
-
-.form-box-wrapper {
-    width: 500px;
-    height: 100%;
-    background: grey;
+.flex-container{
+    box-sizing: border-box;
+    height: 100vh;
+    border: 1px solid black;
     display: flex;
-    align-items: center;
-    margin: -55px auto 0 auto;
-}
+    flex-direction: column;
+    align-items: stretch;
 
-.form-box {
-    margin: auto;
-    border: 3px solid red;
-    height: 150px;
+
+}
+.navbar{
+    border: 1px solid blue;
+    height: 54px;
     width: 100%;
 }
-
-.clearfix {
-    content: "";
-    clear: both;
-    display: table;
+.main-section{
+    border: 1px solid yellow;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-form{
+    position: relative;
+    width: 444px;
+    height: 584px;
+    border: 1px solid red;
+}
+table{
+    height: 110px;
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
 }

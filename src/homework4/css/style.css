@@ -135,8 +135,47 @@ body{
 .facebook-btn{
     width: 157px;
     height: 46px;
+    border: 1px solid red;
 }
 .google-btn{
     width: 157px;
     height: 46px;
+    border: 1px solid red;
+}
+.form-main{
+    margin: auto;
+    width: 322px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    justify-content: space-between;
+
+}
+.inside-form-main{
+    width: 322px;
+    border: 1px solid yellow;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.inside-form-main p{
+    padding:0;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.line-above-form{
+    width: 135px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 6px;
+}
+form{
+    width: 322px;
+    /*border: 1px solid green;*/
+}
+form input{
+    width: 300px;
+    height: 46px;
+    margin-top: 17px;
+    padding-left: 18px;
 }
