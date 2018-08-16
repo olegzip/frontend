@@ -26,17 +26,14 @@ table {
 
 #col-first {
     width: 310px;
-    border-right: 2px solid rgb(228, 228, 228);
 }
 
 #col {
     width: 277px;
-    border-right: 2px solid rgb(228, 228, 228);
 }
 
 #col-last {
     width: 277px;
-    border-left: 2px solid rgb(228, 228, 228);
 }
 
 /*TABLE HEADER:*/
@@ -58,6 +55,14 @@ th {
 
 th div {
     display: inline-block;
+}
+
+th:last-of-type {
+    box-shadow: inset 5px 0 5px -5px rgba(0, 0, 0, 0.27);
+}
+
+th:nth-of-type(3) {
+    box-shadow: inset 5px 0 5px -5px rgba(0, 0, 0, 0.27);
 }
 
 .dollar {
@@ -92,20 +97,25 @@ th div {
     font-size: 18px;
     font-weight: 700;
     vertical-align: bottom;
+    box-shadow: inset -5px 0 5px -5px rgba(0, 0, 0, 0.27);
 }
 
 #pricing-plan {
     font-size: 30px;
     font-weight: 700;
     vertical-align: top;
+    box-shadow: inset -5px 0 5px -5px rgba(0, 0, 0, 0.27);
 }
-#font-stand{
+
+#font-stand {
     font-size: 24px;
 }
-#font-ultim{
+
+#font-ultim {
     font-size: 30px;
 }
-#font-prem{
+
+#font-prem {
     font-size: 24px;
 }
 
@@ -121,6 +131,18 @@ tbody tr:nth-child(odd) {
     background-color: rgb(242, 242, 242);
 }
 
+td:first-of-type {
+    box-shadow: inset -5px 0 5px -5px rgba(0, 0, 0, 0.27);
+}
+
+td:last-of-type {
+    box-shadow: inset 5px 0 5px -5px rgba(0, 0, 0, 0.27);
+}
+
+td:nth-of-type(3) {
+    box-shadow: inset 5px 0 5px -5px rgba(0, 0, 0, 0.27);
+}
+
 /*TABLE FOOTER (LAST ROW):*/
 
 tfoot td {
@@ -132,7 +154,7 @@ tfoot tr {
     height: 109px;
 }
 
-tfoot td:first-child{
+tfoot td:first-child {
     background-color: rgb(222, 222, 222);
 }
 
@@ -148,7 +170,8 @@ tfoot tr button {
     border-radius: 7px;
     cursor: pointer;
     border: none;
-    border-bottom: 7px solid red;
+    border-bottom: 7px solid;
+    transition: ease-out, 0.5s;
 }
 
 .contact-bgr {
@@ -173,4 +196,11 @@ tfoot tr button {
     border-color: rgb(14, 116, 111);
     color: white;
 }
+
+button:hover {
+    box-shadow: 0px 10px 60px -5px rgba(0, 0, 0, 0.7);
+    border-bottom: 3px rgba(0, 0, 0, 0.5);
+}
+
+
 
