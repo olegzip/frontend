@@ -1,4 +1,4 @@
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     font-family: Verdana, sans-serif;
@@ -6,12 +6,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;*/
 }
-.clearfix{
+
+.clearfix {
     content: "";
     clear: both;
     display: table;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +22,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header{
+
+.header {
     position: relative;
     /*margin-bottom: 65px;*/
     padding: 0;
@@ -28,92 +31,116 @@ body{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.41);
 }
-.logo{
+
+.logo {
     position: absolute;
     margin-top: 20px;
     left: 6%;
     display: inline-block;
-    width: 105px; height: 15px;
+    width: 105px;
+    height: 15px;
     background: url('../img/css_sprites.png') -10px -10px;
 }
-.logo:hover{
+
+.logo:hover {
     background: url('../img/css_sprites.png') -10px -45px;
 }
-.navbar{
+
+.navbar {
     float: right;
 }
-.navbar ul{
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-.navbar li{
+
+.navbar li {
     margin-top: 20px;
     display: inline-block;
     padding-right: 25px;
 }
-.log-in{
+
+.log-in {
     margin-top: 20px;
     float: right;
     padding-right: 75px;
     font-size: 14px;
     color: white;
 }
-.log-in a{
+
+.log-in a {
     color: rgb(60, 184, 120);
     text-decoration: none;
 }
-.log-in a:hover{
+
+.log-in a:hover {
     text-decoration: underline;
 }
-#nav-icon-calendar{
-    width: 19px; height: 19px;
+
+#nav-icon-calendar {
+    width: 19px;
+    height: 19px;
     background: url('../img/css_sprites.png') -10px -120px;
 }
-#nav-icon-forum{
-    width: 28px; height: 20px;
+
+#nav-icon-forum {
+    width: 28px;
+    height: 20px;
     background: url('../img/css_sprites.png') -10px -80px;
 }
-#nav-icon-compass{
-    width: 20px; height: 20px;
+
+#nav-icon-compass {
+    width: 20px;
+    height: 20px;
     background: url('../img/css_sprites.png') -135px -10px;
 }
-#nav-line{
+
+#nav-line {
     float: right;
     margin-top: 20px;
     padding-right: 24px;
-    width: 1px; height: 19px;
+    width: 1px;
+    height: 19px;
     background: url('../img/css_sprites.png') -106px -80px;
 }
-#nav-icon-calendar:hover{
+
+#nav-icon-calendar:hover {
     background: url('../img/css_sprites.png') -49px -120px;
 }
-#nav-icon-forum:hover{
+
+#nav-icon-forum:hover {
     background: url('../img/css_sprites.png') -58px -80px;
 }
-#nav-icon-compass:hover{
+
+#nav-icon-compass:hover {
     background: url('../img/css_sprites.png') -135px -50px;
 }
-.form-wrapper{
+
+.form-wrapper {
     box-sizing: border-box;
     margin: auto;
 }
-.log-or-register{
+
+.log-or-register {
     width: 445px;
     height: 585px;
     background-color: white;
     border-radius: 10px;
     display: flex;
 }
-.form-header{
+
+.form-header {
     width: 100%;
     height: 20px;
     margin-top: 30px;
-   /* border-left: 18px solid rgb(60, 184, 120);*/
+    /* border-left: 18px solid rgb(60, 184, 120);*/
     position: relative;
 }
-.green-quad{
+
+.green-quad {
     display: inline-block;
     float: left;
     margin-top: 3px;
@@ -121,61 +148,148 @@ body{
     width: 18px;
     background-color: rgb(60, 184, 120);
 }
-.form-header p{
+
+.form-header p {
     float: left;
     display: inline-block;
     margin: 0;
     padding-left: 42px;
     font-size: 20px;
 }
-.form-header a{
+
+.form-header a {
     float: right;
     padding-right: 60px;
+    color: rgb(60, 184, 120);
+    text-decoration: none;
 }
-.facebook-btn{
-    width: 157px;
-    height: 46px;
-    border: 1px solid red;
+
+.form-header a:hover {
+    text-decoration: underline;
 }
-.google-btn{
-    width: 157px;
-    height: 46px;
-    border: 1px solid red;
-}
-.form-main{
+
+.form-main {
     margin: auto;
     width: 322px;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
     justify-content: space-between;
-
 }
-.inside-form-main{
+
+.facebook-btn {
+    width: 157px;
+    height: 46px;
+    margin-top: 15px;
+}
+
+.google-btn {
+    width: 157px;
+    height: 46px;
+    margin-top: 15px;
+}
+
+.inside-form-main {
     width: 322px;
-    border: 1px solid yellow;
     text-align: center;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
-.inside-form-main p{
-    padding:0;
+
+.inside-form-main p {
+    padding: 0;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 27px;
 }
-.line-above-form{
+
+.line-above-form {
     width: 135px;
     border-bottom: 1px solid grey;
     margin-bottom: 6px;
 }
-form{
+
+form {
     width: 322px;
-    /*border: 1px solid green;*/
+    display: flex;
+    flex-direction: column;
 }
-form input{
-    width: 300px;
+
+form input {
     height: 46px;
-    margin-top: 17px;
+    margin-top: 9px;
     padding-left: 18px;
+    border: 0.5px solid lightgrey;
+    border-radius: 3px;
 }
+
+.checkbox-wrap {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 19px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-wrap p {
+    padding: 0;
+    font-size: 14px;
+}
+.checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 0.5px solid lightgrey;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-wrap input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-wrap .checkmark:after {
+    left: 6.5px;
+    top: 2.5px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(60, 184, 120);;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-wrap a{
+    text-decoration: none;
+    color: rgb(60, 184, 120);
+}
+
+.checkbox-wrap a:hover{
+    text-decoration: underline;
+}
+
+.form-main input:last-of-type{
+    margin: 0;
+    background-color: rgb(60, 184, 120);
+    color: white;
+    font-size: 16px;
+}
+
+.form-main input:last-of-type:hover{
+    background-color: rgb(46, 155, 101);
+}
+
+
+
