@@ -175,17 +175,61 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.facebook-btn {
+.quick-login{
+    width: 322px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.quick-login-btn {
     width: 157px;
     height: 46px;
     margin-top: 15px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: grey;
 }
 
-.google-btn {
-    width: 157px;
-    height: 46px;
-    margin-top: 15px;
+.quick-login-btn:first-of-type{
+    background-color: rgb(44, 93, 185);
+}
+
+.quick-login-btn:first-of-type:hover {
+    background-color: rgb(38, 75, 150);
+}
+
+.quick-login-btn:last-of-type{
+    background-color: rgb(224, 73, 46);
+}
+
+.quick-login-btn:last-of-type:hover {
+    background-color: rgb(195, 65, 44);
+}
+
+
+.btn-logo{
+    border-right: 0.5px solid black;
+    width: 45px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-text{
+    font-size: 16px;
+    width: 110px;
+}
+
+.facebook-bgr{
+    rgb(44, 93, 185);
+}
+
+.google-bgr{
+    rgb(224, 73, 46);
 }
 
 .inside-form-main {
