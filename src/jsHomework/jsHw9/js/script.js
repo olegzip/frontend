@@ -1,25 +1,24 @@
 let ZODIACSIGNS = [
     [1, ''],
-    [19, 'Козерог (22.12–19.1)'],
-    [18, 'Водолей (20.1–18.2)'],
-    [20, 'Рыбы (19.2–20.3)'],
-    [19, 'Овен (21.3–19.4)'],
-    [20, 'Телец (20.4–20.5)'],
-    [21, 'Близнецы (21.5–21.6)'],
-    [22, 'Рак (22.6–22.7)'],
-    [22, 'Лев (23.7–22.8)'],
-    [22, 'Дева (23.8–22.9)'],
-    [22, 'Весы (23.9–22.10)'],
-    [22, 'Скорпион (23.10–22.11)'],
-    [21, 'Стрелец (23.11–21.12)']
+    [19, 'Козерог'], // (22.12–19.1)
+    [18, 'Водолей'], // (20.1–18.2)
+    [20, 'Рыбы'], // (19.2–20.3)
+    [19, 'Овен'], // (21.3–19.4)
+    [20, 'Телец'], // (20.4–20.5)
+    [21, 'Близнецы'], // (21.5–21.6)
+    [22, 'Рак'], // (22.6–22.7)
+    [22, 'Лев'], // (23.7–22.8)
+    [22, 'Дева'], // (23.8–22.9)
+    [22, 'Весы'], // (23.9–22.10)
+    [22, 'Скорпион'], // (23.10–22.11)
+    [21, 'Стрелец'] // (23.11–21.12)
 ];
 
 let userDate = prompt("Введите дату рождения в формате dd.mm.yyyy:", "");
-let parsedDate = userDate.split(".");
-
-
-// console.log(Number.valueOf(parsedDate[2]));
-// console.log(+parsedDate[2]);
+let parsedUserDate = userDate.split(".");
+for (let i = 0; i < parsedUserDate.length; i++) {
+    parsedUserDate[i] = +parsedUserDate[i];
+}
 
 let currentDate = new Date();
 let parsedCurrentDate = [
@@ -46,6 +45,6 @@ function horoscope(day, month) {
     return (ZODIACSIGNS[month][1]);
 }
 
-console.log(yearDistinction(parsedCurrentDate[2], parsedDate[2]));
-console.log(horoscope(parsedDate[0], parsedDate[1]));
+alert(`Вам ${yearDistinction(parsedCurrentDate, parsedUserDate)} лет`);
+alert('Ваш знак зодиака: ' + horoscope(parsedUserDate[0], parsedUserDate[1]));
 
