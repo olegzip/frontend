@@ -1,28 +1,83 @@
-.body {
+.body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    color: white;
 }
 
 .container {
-    margin: 0;
-    height: 100vh;
+    margin: auto;
+    width: 1366px;
+    min-height: 768px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
-    border: 1px solid black;
     height: 140px;
-    width: 80%;
+    width: 1060px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+
+}
+
+.header-logo {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+}
+
+.header-logo-img {
+    width: 46px;
+    height: 44px;
+    background-image: url("../img/logo.png");
+}
+
+header a {
+    width: 168px;
+    color: white;
+
+}
+
+header a:hover .header-logo-img {
+    background-image: url("../img/logo-orange.png");
+}
+
+header a:hover .header-logo-text {
+    color: rgb(242, 101, 28);
+}
+
+.header-logo-text {
+    position: absolute;
+    width: 104px;
+    top: -24px;
+    left: 62px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.header-logo-text span {
+    font-size: 29px;
+}
+
+.header-contacts {
+    font-size: 18px;
+    text-align: right;
+}
+
+.header-contacts p {
+    margin: 0;
 }
 
 .gallery {
-    border: 1px solid yellow;
-    width: 80%;
+    max-width: 1060px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -31,17 +86,77 @@
     justify-content: space-between;
 }
 
-.footer {
-    border: 1px solid green;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.img__shadow-and-hover {
+    width: 307px;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 17px 24px 0 black;
+    overflow: hidden;
 }
 
-.figure {
-    width: 308px;
-    height: 200px;
-    border: 1px solid blue;
+.figure p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 22px;
+    margin-bottom: 58px;
 }
+
+footer p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.show-details {
+    background-color: rgba(242, 101, 34, 0.9);
+    width: 307px;
+    height: 63px;
+    position: absolute;
+    bottom: -63px;
+    left: 0;
+    transition: bottom 0.3s linear;
+}
+
+.show-details p {
+    margin: 0;
+    position: absolute;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 21px;
+    padding-top: 16px;
+}
+
+.show-details div {
+    position: absolute;
+    top: 30px;
+    left: 21px;
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.show-details a {
+    position: absolute;
+    top: 30px;
+    right: 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.orng {
+    cursor: pointer;
+    transition: color 0.3s linear;
+}
+
+.figure:hover .orng {
+    color: rgb(242, 101, 34);
+    transition: color 0.3s linear;
+}
+
+.figure:hover .show-details {
+    bottom: 0;
+    transition: bottom 0.3s linear;
+}
+
