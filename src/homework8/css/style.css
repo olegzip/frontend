@@ -1,14 +1,9 @@
 
-.html, body{
+.html, body, h2 {
     font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-h2{
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -30,30 +25,36 @@ section {
     align-items: center;
     justify-content: center;
 
-
 }
 
-.section-header{
+.section-header {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
     color: #333333;
 }
 
-.yellow{
+.yellow {
     color: #f1ad1d;
 }
 
-section:nth-of-type(odd) h2{
+section:nth-of-type(odd) h2 {
     color: white;
 }
 
-.section-subheader{
+.section-subheader {
     font-size: 17px;
     color: #4d4943;
 }
 
-.we-make-design{
+.line {
+    display: inline-block;
+    margin-top: 55px;
+    width: 60px;
+    border: 1.5px solid #f1ad1d;
+}
+
+.we-make-design {
     display: block;
     height: 100vh;
     margin-bottom: 112px;
@@ -61,7 +62,7 @@ section:nth-of-type(odd) h2{
     position: relative;
 }
 
-.logo{
+.logo {
     display: inline-block;
     position: absolute;
     text-align: left;
@@ -69,78 +70,79 @@ section:nth-of-type(odd) h2{
     top: 530px;
 }
 
-.slogan{
-    width: 831px;
-    height: 128px;
-    border: 1px solid white;
-}
-
-.slogan h1{
-    box-sizing: border-box;
-    margin: 0;
-    display: inline-block;
+.logo h1 {
     font-size: 48px;
-    padding: 33px 26px 33px 56px;
-    background-color: #f1ad1d;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.slogan h1:first-of-type{
-    background-color: white;
-    padding: 33px 29px;
-}
-
-.we-make-design h1{
-    font-size: 54px;
+    font-weight: bold;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
-.we-make-design p{
+.logo p {
+    margin: 0;
+    padding-bottom: 28px;
     font-size: 18px;
     color: white;
 }
 
-.what-they-said{
+.slogan {
+    width: 831px;
+    height: 128px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slogan h1 {
+    box-sizing: border-box;
+    margin: 0;
+    display: inline-block;
+    font-size: 54px;
+    font-weight: bold;
+    color: white;
+    padding: 33px 0 33px 26px;
+}
+
+.slogan h1:first-of-type {
+    background-color: white;
+    padding: 33px 26px;
+}
+
+.what-they-said {
     height: 372px;
 }
 
-.we-change-ideas{
+.we-change-ideas {
     height: 380px;
     background-image: url("../img/src_main_frontend_html_css_homework_homework8_img_bg2.jpg");
 }
 
-.secret-of-company{
+.secret-of-company {
     height: 439px;
 }
 
-.featured-on{
+.featured-on {
     height: 475px;
     background-image: url("../img/src_main_frontend_html_css_homework_homework8_img_bg3.jpg");
 }
 
-.they-trust-us{
+.they-trust-us {
     height: 402px;
 }
-.check-what-said{
+
+.check-what-said {
     height: 485px;
     background-image: url("../img/src_main_frontend_html_css_homework_homework8_img_bg4.jpg");
 }
-.check-what-said p{
+
+.check-what-said p {
     color: white;
 }
 
-.line{
-    display: inline-block;
-    margin-top: 55px;
-    width: 60px;
-    border: 1.5px solid #f1ad1d;
-}
-
-.check-what-said .line{
+.check-what-said .line {
     width: 281px;
     border-color: white;
 }
 
-.some-times{
+.some-times {
     height: 372px;
 }
