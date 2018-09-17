@@ -125,6 +125,15 @@ section:nth-of-type(odd) h2 {
     background-image: url("../img/src_main_frontend_html_css_homework_homework8_img_bg3.jpg");
 }
 
+.img-container {
+    width: 850px;
+    padding-top: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .they-trust-us {
     height: 402px;
 }
