@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1200px;
+}
+
+section {
+    margin: 0 auto;
+}
+
+header{
+    color: rgb(66, 66, 66);
+}
+
+.header-contacts {
+    height: 41px;
+    background-color: rgb(240, 242, 244);
+}
+
+.header-contacts-wrapper {
+    /*margin: 0 auto;*/
+    height: 100%;
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-contacts-item1 {
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+.header-contacts-item1 i {
+    font-size: 18px;
+    padding-right: 6px;
+}
+
+.header-contacts-item2 {
+    padding: 0 12px;
+    font-size: 15px;
+}
+
+.header-contacts-item2 i {
+    font-size: 18px;
+    padding: 0 5px 0 9px;
+}
+
+.vertical-line {
+    height: 100%;
+    width: 1px;
+    background-color: #333333;
+}
+
+.header-social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 136, 192);
+    color: white;
+    border-radius: 4px;
+    width: 26px;
+    height: 26px;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    width: 240px;
+}
+
+.header-logo p{padding-left: 12px;font-size: 15px;}
+
+.header-logo span{
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.header-navigation{
+    width: 1024px;
+    height: 132px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navigation button{
+    width: 171px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(222, 43, 36);
+    margin-top: 2px;
+}
+
+.navigation li{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0 18px;
+    position: relative;
+}
+.navigation li::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(66, 66, 66);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    right: -3px;
+    top: 5px;
+}
+.navigation a{
+    text-decoration: none;
+    
+}
+
+.main-banner{
+    align-items: center;
+    background-image: url("../img/header-banner-fon-img.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.main-banner-tagline{
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-left: 3px;
+}
+
+.main-banner p{font-size: 30px;font-weight: 300;letter-spacing: -0.3px;padding-top: 5px;}

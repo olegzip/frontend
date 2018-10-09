@@ -28,6 +28,10 @@ body {
 }
 ol, ul {
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 166px;
+    margin-top: 4px;
+    text-decoration: none;
 }
 blockquote, q {
     quotes: none;
