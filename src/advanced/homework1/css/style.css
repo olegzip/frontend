@@ -90,7 +90,7 @@ header{
     align-items: center;
 }
 
-.header-navigation button{
+.header-consultation-btn{
     width: 171px;
     height: 36px;
     border: none;
@@ -145,3 +145,15 @@ header{
 }
 
 .main-banner p{font-size: 30px;font-weight: 300;letter-spacing: -0.3px;padding-top: 5px;}
+
+.main-consultation-btn{
+    width: 171px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(222, 43, 36);
+}
