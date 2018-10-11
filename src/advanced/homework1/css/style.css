@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: #424242;
 }
 
 .container {
@@ -11,7 +12,7 @@ section {
     margin: 0 auto;
 }
 
-header{
+header {
     color: rgb(66, 66, 66);
 }
 
@@ -67,21 +68,24 @@ header{
     height: 26px;
 }
 
-.header-logo{
+.header-logo {
     display: flex;
     align-items: center;
     width: 240px;
 }
 
-.header-logo p{padding-left: 12px;font-size: 15px;}
+.header-logo p {
+    padding-left: 12px;
+    font-size: 15px;
+}
 
-.header-logo span{
+.header-logo span {
     font-size: 37px;
     font-weight: 700;
     letter-spacing: 1.2px;
 }
 
-.header-navigation{
+.header-navigation {
     width: 1024px;
     height: 132px;
     margin: 0 auto;
@@ -90,7 +94,7 @@ header{
     align-items: center;
 }
 
-.header-consultation-btn{
+.header-consultation-btn {
     width: 171px;
     height: 36px;
     border: none;
@@ -103,14 +107,15 @@ header{
     margin-top: 2px;
 }
 
-.navigation li{
+.navigation li {
     display: inline-block;
     font-weight: 700;
     font-size: 15px;
     padding: 0 18px;
     position: relative;
 }
-.navigation li::after{
+
+.navigation li::after {
     content: "";
     position: absolute;
     background-color: rgb(66, 66, 66);
@@ -120,16 +125,17 @@ header{
     right: -3px;
     top: 5px;
 }
-.navigation a{
+
+.navigation a {
     text-decoration: none;
     color: rgb(66, 66, 66);
 }
 
-.navigation a:hover{
-    color:rgb(222, 43, 36);
+.navigation a:hover {
+    color: rgb(222, 43, 36);
 }
 
-.main-banner{
+.main-banner {
     align-items: center;
     background-image: url("../img/header-banner-fon-img.png");
     background-repeat: no-repeat;
@@ -141,18 +147,24 @@ header{
     color: white;
 }
 
-.main-banner-tagline{
+.main-banner-tagline {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 1.4px;
     margin-left: 3px;
-    margin-top: -65px;
-    margin-bottom: 3px;
+    margin-top: -93px;
+    margin-bottom: 5px;
 }
 
-.main-banner p{font-size: 30px;font-weight: 300;letter-spacing: -0.3px;padding-top: -9px;}
+.main-banner p {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    padding-top: -9px;
+    margin-bottom: 31px;
+}
 
-.main-consultation-btn{
+.main-consultation-btn {
     width: 328px;
     height: 70px;
     border: none;
@@ -162,10 +174,68 @@ header{
     font-weight: 700;
     cursor: pointer;
     background-color: rgb(248, 205, 83);
-    margin-top: 39px;
+    margin-bottom: -27px;
 }
 
-.section-header{
+.section-header {
+    text-align: center;
+    margin-top: 98px;
+}
+
+.section-header h2 {
     display: inline-block;
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.section-header h3 {
+    font-size: 20px;
+    padding-top: 3px;
+}
+
+.section-header h2::after {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 5px;
+    background-color: #424242;
+    bottom: -43px;
+    left: 59px;
+}
+
+.about-us-items {
+    width: 928px;
     margin: 0 auto;
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-item {
+    text-align: center;
+}
+
+.about-us-item h3 {
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.about-us-item p {
+    font-size: 13.5px;
+    display: block;
+    width: 244px;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+}
+
+.our-work-wrapper{
+    width: 100%;
+    height: 870px;
+    background-color: #de2b24;
 }
