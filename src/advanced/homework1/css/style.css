@@ -126,6 +126,11 @@ header {
     top: 5px;
 }
 
+.navigation li:last-of-type::after {
+    content: "";
+    display: none;
+}
+
 .navigation a {
     text-decoration: none;
     color: rgb(66, 66, 66);
@@ -145,6 +150,7 @@ header {
     flex-direction: column;
     justify-content: center;
     color: white;
+    margin-bottom: 98px;
 }
 
 .main-banner-tagline {
@@ -179,7 +185,7 @@ header {
 
 .section-header {
     text-align: center;
-    margin-top: 98px;
+    /* margin-top: 98px; */
 }
 
 .section-header h2 {
@@ -234,8 +240,139 @@ header {
     letter-spacing: 0.4px;
 }
 
-.our-work-wrapper{
+.our-work-wrapper {
     width: 100%;
     height: 870px;
     background-color: #de2b24;
+    margin-top: 137px;
+}
+
+.our-work .section-header {
+    color: white;
+    padding-top: 108px;
+}
+
+.our-work .section-header h2::after {
+    background-color: white;
+}
+
+.our-work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1024px;
+    margin: 66px auto 0 auto;
+    background-color: rgb(243, 94, 89);
+}
+
+.our-work-gallery-item {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 256px;
+    height: 253px;
+    text-align: center;
+}
+
+/*.our-work-gallery-item img{*/
+/*display: inline-block;*/
+/*padding-top: 0px;*/
+/*}*/
+.our-work-gallery-item h3 {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 19px;
+    padding-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+.our-work-gallery-item p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.project-name {
+    padding-top: 75px;
+}
+
+.get-in-touch {
+    background-color: rgb(42, 42, 42);
+    text-align: center;
+    height: 490px;
+}
+
+.get-in-touch h3 {
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    padding-top: 89px;
+    padding-left: 3px;
+    letter-spacing: 1.2px;
+}
+
+.social-btn-container {
+    margin: 25px auto 36px auto;
+    width: 257px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-in-touch-social-btn {
+    box-sizing: border-box;
+    width: 49px;
+    height: 49px;
+    border: 2px solid #515151;
+    border-radius: 1px;
+    text-align: center;
+    padding-top: 11px;
+    cursor: pointer;
+}
+
+.get-in-touch-social-btn:hover {
+    border-color: #de2b24;
+}
+
+.get-in-touch p {
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.4px;
+}
+
+.get-in-touch input {
+    display: block;
+    margin: 33px auto 30px auto;
+    width: 662px;
+    height: 48px;
+    font-size: 14px;
+    color: white;
+    padding-left: 20px;
+    background-color: rgb(80, 80, 80);
+    border: none;
+}
+
+.get-in-touch input::-webkit-input-placeholder {
+    color: #cecece;
+}
+
+.get-in-touch button {
+    width: 153px;
+    height: 53px;
+    border-radius: 1px;
+    border: 2px solid #515151;
+    background-color: rgba(243, 243, 243, 0);
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    height: 67px;
+    text-align: center;
+    background-color: rgb(81, 81, 81);
+    font-size: 14px;
+    color: #cecece;
+    line-height: 67px;
+    letter-spacing: 0.2px;
 }
