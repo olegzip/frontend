@@ -6,60 +6,157 @@
     <title>HomeWork2</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="container navbar-content">
-        <span class="navbar-title">Navigation</span>
-        <a href="#" class="navbar-button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        <ul class="navbar-menu">
-            <li class="navbar-menu-item"><a href="" class="navbar-menu-link active">Pizza delivery</a></li>
-            <li class="navbar-menu-item"><a href="" class="navbar-menu-link">UA/UX Salads</a></li>
-            <li class="navbar-menu-item"><a href="" class="navbar-menu-link">Desserts</a></li>
-            <li class="navbar-menu-item"><a href="" class="navbar-menu-link">About Us</a></li>
-            <li class="navbar-menu-item"><a href="" class="navbar-menu-link">Contacts</a></li>
-        </ul>
-    </div>
-</nav>
-<header class="header">
+<header>
     <div class="container">
-        <h1 class="header-title">All we need is Love. <br>
-            And pizza. Pizza is good</h1>
-        <a href="www.new-pizza.com" class="header-site-link">www.new-pizza.com</a>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">PIZZA DELIVERY</a></li>
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">UI/UX SALADS</a></li>
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">DESSERTS</a></li>
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">ABOUT US</a></li>
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">CONTACTS</a></li>
+            </ul>
+
+        </nav>
+        <div class="logo"></div>
     </div>
 </header>
-<div class="food-menu container">
-    <a href="" class="food-menu-item food-menu-delivery"><h3 class="food-menu-name">Pizza Delivery</h3></a>
-    <a href="" class="food-menu-item food-menu-uaix"><h3 class="food-menu-name">UA/UX Salads</h3></a>
-    <a href="" class="food-menu-item food-menu-desserts"><h3 class="food-menu-name">Desserts</h3></a>
-</div>
-<div class="food-price">
-    <div class="food-price__heading"></div>
-    <div class="food-price__sub-heading"></div>
-    <div class="food-price__category">
-        <h4 class="food-price__category-heading"></h4>
-        <h5 class="food-price__sub-category-heading"></h5>
-        <ul class="food-price__food-list">
-            <li class="food-price__food-item">
-                <div class="food-price__container">
-                    <div class="food-price__info">
-                        <h5 class="food-price__food-heading"></h5>
-                        <div class="food-price__detais"></div>
+<main>
+    <article>
+        <div class="container">
+            <section class="slogan">
+                <h1 class="main-slogan">All we need is Love.<br>
+                    And pizza. Pizza is good</h1>
+                <h2 class="main-slogan-link">www.new-pizza.com</h2>
+            </section>
+            <section class="products">
+                <aside class="products__item">
+                    <a href="#" class="products__item-link pizza">Pizza Delivery</a>
+                    <i class="fas fa-angle-right products__item-square"></i>
+                </aside>
+                <aside class="products__item">
+                    <a href="#" class="products__item-link salads">UA/UX Salads</a>
+                    <i class="fas fa-angle-right products__item-square"></i>
+                </aside>
+                <aside class="products__item">
+                    <a href="#" class="products__item-link desserts">Desserts</a>
+                    <i class="fas fa-angle-right products__item-square"></i>
+                </aside>
+            </section>
+            <section class="menu">
+                <h2 class="menu-header">neque ero ullamcorper sed</h2>
+                <p class="menu-subheader">Ultrices cursus sit amet placerat tortor</p>
+                <div class="menu__group">
+                    <div class="menu-group-header">tincidunt at Mauris</div>
+                    <div class="menu-group-subheader">tincidunt at Mauris</div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Lass aptent taciti </h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
                     </div>
-                    <div class="food-price__price">
-                        <div class="food-price__price-amount"></div>
-                        <div class="food-price__price-info"></div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Nec fermentum nibh</h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Eu dolor accumsan pharetra</h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Eu dolor accumsan pharetra</h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu-group-subheader">id dolor Pellentesque</div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Lass aptent taciti </h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Nec fermentum nibh</h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
                     </div>
                 </div>
-            </li>
-        </ul>
+
+                <div class="menu__group">
+                    <div class="menu-group-header">vestibulum augue et</div>
+                    <div class="menu-group-subheader">augue Proin eleifend</div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Lass aptent taciti </h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Nec fermentum nibh</h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Eu dolor accumsan pharetra</h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Eu dolor accumsan pharetra</h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu-group-subheader">pharetra at sit amet sem</div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Lass aptent taciti </h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu_item-name">· Nec fermentum nibh</h3>
+                        <p class="menu__item-price">$1200</p>
+                        <p class="menu__item-description">Praesent hendrerit massa ut libero bibendum pulvinar.
+                            Pellenteue
+                            eget tortor dolor. Nam quis nunc et eros mollis facilisis. </p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </article>
+</main>
+<footer>
+    <div class="container">
+        Best pizza from 2018 year.<br>
+        New UA/UX salads - not boring, only fun.
     </div>
-</div>
+</footer>
 </body>
 </html>
