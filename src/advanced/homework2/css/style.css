@@ -8,6 +8,7 @@ html, body {
 }
 
 .nav-menu {
+    display: none;
     list-style-type: none;
     margin: 0;
     width: 100%;
@@ -23,6 +24,10 @@ html, body {
 }
 
 .nav-mobile {
+    background-color: black;
+    color: #ffffff;
+    height: 37px;
+    padding-left: 20px;
 }
 
 .slogan {
@@ -82,7 +87,7 @@ html, body {
     font-weight: 600;
     display: inline-block;
     width: 22%;
-    height: 75px;
+    height: 100%;
     text-align: center;
     line-height: 3;
     background-color: #acd8ad;
@@ -105,6 +110,10 @@ html, body {
     margin-top: 16px;
 }
 
+.menu-header-wrapper {
+    position: relative;
+}
+
 .menu-header {
     color: #3f4043;
     font-size: 20px;
@@ -116,6 +125,10 @@ html, body {
     color: #cbccce;
     font-size: 10px;
     font-weight: 400;
+}
+
+.menu__logo {
+    display: none;
 }
 
 .menu-group-header {
@@ -137,20 +150,20 @@ html, body {
 }
 
 .menu__group:nth-of-type(even) .menu-group-header {
-    border: 1px solid red;
-    color: red;
+    background-color: #acd8ad;
+    color: #ffffff;
+    /* order: 1; */
 }
 
 .menu__item {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .menu__item-name {
     height: 12px;
-    font-family: Lato;
     font-weight: 400;
 }
 
@@ -164,7 +177,7 @@ html, body {
     color: #3f4043;
     font-size: 9px;
     padding-top: 7px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 footer {
@@ -176,4 +189,243 @@ footer {
     text-align: center;
     font-size: 12px;
     color: #ffffff;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 979px;
+    }
+
+    .slogan {
+        height: 346px;
+        background-image: url("../img/640_header-background.jpg");
+        margin-bottom: 3px;
+    }
+
+    .products__item {
+        height: 150px;
+    }
+
+    .products__item-link {
+        height: 100%;
+    }
+
+    .pizza {
+        background-image: url("../img/640_pizza-delivery-bg.jpg");
+    }
+
+    .salads {
+        background-image: url("../img/640_salads-bg.jpg");
+    }
+
+    .desserts {
+        background-image: url("../img/640_desserts-bg.jpg");
+    }
+
+    .nav-mobile {
+        font-size: 24px;
+        height: 74px;
+        line-height: 3;
+        padding-left: 38px;
+    }
+
+    .main-slogan {
+        font-size: 36px;
+        padding: 30px 0 22px 38px;
+        line-height: normal;
+    }
+
+    .main-slogan-link {
+        font-size: 24px;
+        padding-left: 38px;
+    }
+
+    .products__item-link {
+        font-size: 36px;
+        line-height: 4;
+    }
+
+    .menu {
+        margin-top: 45px;
+    }
+
+    .menu-header {
+        font-size: 40px;
+        padding-left: 15px;
+    }
+
+    .menu-subheader {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    .menu-group-header {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 24px;
+        padding: 23px 28px;
+    }
+
+    .menu-group-subheader {
+        font-size: 30px;
+        padding-left: 26px;
+    }
+
+    .menu__item {
+        /* margin: 22px; */
+    }
+
+    .menu__item-name {
+        font-size: 27px;
+    }
+
+    .menu__item-price {
+        font-size: 27px;
+    }
+
+    .menu__item-description {
+        font-size: 18px;
+        padding-top: 16px;
+    }
+
+    .products__item-square {
+        line-height: 5;
+        font-size: 32px;
+    }
+
+    footer {
+        margin-top: 100px;
+        height: 100px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        line-height: 2.5;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .container {
+        max-width: 979px;
+    }
+
+    .slogan {
+        height: 530px;
+        background-image: url("../img/980_header-background.jpg");
+        margin-bottom: 6px;
+    }
+
+    .products {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-items: center;
+    }
+
+    .products__item {
+        height: 327px;
+        width: 327px;
+        /* flex-grow: 1; */
+        margin: 0;
+        display: inline-block;
+    }
+
+    .products__item-link {
+        height: 100%;
+    }
+
+    .pizza {
+        background-image: url("../img/980_pizza-delivery-bg.jpg");
+    }
+
+    .salads {
+        background-image: url("../img/980_salads-bg.jpg");
+    }
+
+    .desserts {
+        background-image: url("../img/980_desserts-bg.jpg");
+    }
+
+    .nav-mobile {
+        visibility: hidden;
+    }
+
+    .main-slogan {
+        font-size: 54px;
+        padding: 30px 0 22px 38px;
+    }
+
+    .main-slogan-link {
+        font-size: 34px;
+    }
+
+    .products__item-link {
+        width: 327px;
+        height: 327px;
+        font-size: 38px;
+        line-height: 9;
+    }
+
+    .products__item-square {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 72px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .menu-header-wrapper {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .menu-header {
+        font-size: 34px;
+        padding-left: 30px;
+    }
+
+    .menu-subheader {
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+
+    .menu__logo {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: -25px;
+    }
+
+    .menu-group-header {
+        font-size: 34px;
+        margin-top: 20px;
+        margin-bottom: 24px;
+        padding: 23px 28px;
+    }
+
+    .menu-group-subheader {
+        font-size: 26px;
+    }
+
+    .menu__item {
+        margin: 22px;
+    }
+
+    .menu__item-name {
+        font-size: 24px;
+    }
+
+    .menu__item-description {
+        font-size: 16px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+
+    .menu__group:nth-of-type(even) {
+        order: 1;
+    }
 }
