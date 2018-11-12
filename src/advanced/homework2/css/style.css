@@ -8,7 +8,6 @@ html, body {
 }
 
 .nav-menu {
-
     list-style-type: none;
     margin: 0;
     width: 100%;
@@ -21,6 +20,9 @@ html, body {
 .nav-menu__link {
     visibility: hidden;
     color: red;
+}
+
+.nav-mobile {
 }
 
 .slogan {
@@ -46,7 +48,6 @@ html, body {
 }
 
 .products {
-
     display: flex;
     flex-direction: column;
 }
@@ -100,7 +101,8 @@ html, body {
 }
 
 .menu {
-    padding: 10px;
+    padding: 7px;
+    margin-top: 16px;
 }
 
 .menu-header {
@@ -114,4 +116,64 @@ html, body {
     color: #cbccce;
     font-size: 10px;
     font-weight: 400;
+}
+
+.menu-group-header {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #3f4043;
+    padding: 12px;
+    margin-top: 15px;
+    color: #acd8ad;
+}
+
+.menu-group-subheader {
+    color: #3f4043;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.menu__group:nth-of-type(even) .menu-group-header {
+    border: 1px solid red;
+    color: red;
+}
+
+.menu__item {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.menu__item-name {
+    height: 12px;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.menu__item-price {
+    color: #3f4043;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.menu__item-description {
+    color: #3f4043;
+    font-size: 9px;
+    padding-top: 7px;
+    font-weight: 400px;
+}
+
+footer {
+    background-color: #acd8ad;
+    padding: 12px;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
 }
