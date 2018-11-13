@@ -185,6 +185,10 @@ footer {
     padding: 12px;
 }
 
+.footer-logo {
+    display: none;
+}
+
 .footer-text {
     text-align: center;
     font-size: 12px;
@@ -306,7 +310,7 @@ footer {
 
 @media screen and (min-width: 980px) {
     .container {
-        max-width: 979px;
+        max-width: 980px;
     }
 
     .slogan {
@@ -423,6 +427,17 @@ footer {
 
     footer {
         margin-top: 80px;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-logo {
+        display: inline-block;
     }
 
     .menu__group:nth-of-type(even) {
