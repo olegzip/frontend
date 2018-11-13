@@ -24,8 +24,8 @@ html, body {
 .nav-menu__item {
     display: block;
     width: 100%;
-    /* padding: 10px; */
-    : }
+    padding: 10px;
+}
 
 .nav-menu__link {
     color: #373c3f;
@@ -49,11 +49,11 @@ html, body {
     height: 40px;
 }
 
-#nav-mobile {
+#burger-nav {
     display: none;
 }
 
-.nav-mobile__label {
+.burger-nav__label {
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -67,19 +67,19 @@ html, body {
     width: 100%;
 }
 
-.burger-wrapper {
+.burger-background {
     position: absolute;
     right: 0;
     height: 100%;
-    width: 36px;
+    width: 41px;
     background-color: black;
-    z-index: 1;
+    z-index: 0;
 }
 
 .burger-line {
     position: absolute;
     top: 12px;
-    right: 20px;
+    right: 13px;
     width: 15px;
     height: 2px;
     background-color: #ffffff;
@@ -101,25 +101,29 @@ html, body {
     top: 24px;
 }
 
-#nav-mobile:checked ~ .nav-menu {
+#burger-nav:checked ~ .nav-menu {
     max-height: 161px;
     width: 182px;
     font-size: 12px;
 }
 
-#nav-mobile:checked ~ .first {
+#burger-nav:checked ~ .first {
     display: none;
 }
 
-#nav-mobile:checked ~ .second {
+#burger-nav:checked ~ .second {
     transform: rotate(45deg);
 }
 
-#nav-mobile:checked ~ .third {
+#burger-nav:checked ~ .third {
     transform: rotate(-45deg);
 }
 
-#nav-mobile:checked ~ .fourth {
+#burger-nav:checked ~ .fourth {
+    display: none;
+}
+
+.header-logo {
     display: none;
 }
 
@@ -282,6 +286,11 @@ footer {
     display: none;
 }
 
+.footer-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-text {
     text-align: center;
     font-size: 12px;
@@ -324,35 +333,40 @@ footer {
         box-sizing: border-box;
     }
 
-    .nav-mobile {
+    .burger-nav {
         font-size: 24px;
         height: 74px;
         line-height: 3;
         padding-left: 38px;
     }
 
-    .nav-mobile__label {
+    .burger-nav__label {
         box-sizing: border-box;
         font-size: 24px;
         line-height: 74px;
     }
 
     .burger-line {
-        width: 30px;
+        width: 34px;
         height: 4px;
-        top: 31px;
+        top: 27px;
+        right: 22px;
+    }
+
+    .burger-background {
+        width: 82px;
     }
 
     .second {
-        top: 39px;
+        top: 35px;
     }
 
     .third {
-        top: 39px;
+        top: 35px;
     }
 
     .fourth {
-        top: 47px;
+        top: 43px;
     }
 
     .main-slogan {
@@ -442,10 +456,61 @@ footer {
         max-width: 980px;
     }
 
+    .nav > div, .nav > label, .nav > input {
+        display: none;
+    }
+
+    .nav {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .nav-menu {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: unset;
+        transform: unset;
+        font-size: 14px;
+        overflow: unset;
+        max-height: unset;
+        bottom: unset;
+        right: unset;
+    }
+
+    .nav-menu__item {
+        display: inline-block;
+        width: unset;
+        padding: 0;
+    }
+
+    .nav-menu__link {
+        box-sizing: border-box;
+        background: none;
+        padding: 0;
+        border: none;
+        color: lightgray;
+        width: unset;
+        text-transform: uppercase;
+    }
+
+    .nav-menu__link:hover {
+        color: #ffffff;
+        background-color: unset;
+    }
+
+    .header-logo {
+    }
+
     .slogan {
         height: 530px;
         background-image: url("../img/980_header-background.jpg");
-        margin-bottom: 6px;
+        background-size: cover;
+        margin-bottom: 3px;
     }
 
     .products {
@@ -479,7 +544,7 @@ footer {
         background-image: url("../img/980_desserts-bg.jpg");
     }
 
-    .nav-mobile {
+    .burger-nav {
         visibility: hidden;
     }
 
@@ -570,9 +635,75 @@ footer {
     }
 
     .footer-text-wrapper {
+        display: block;
     }
 
     .menu__group:nth-of-type(even) {
         order: 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .slogan {
+        height: 649px;
+        background-image: url("../img/1200_header-background.jpg");
+        background-size: cover;
+        margin-bottom: 3px;
+    }
+
+    .main-slogan {
+        font-size: 62px;
+    }
+
+    .main-slogan-link {
+        font-size: 38px;
+    }
+
+    .products__item {
+        width: 400px;
+        height: 400px;
+    }
+
+    .products__item-link {
+        width: 400px;
+        height: 400px;
+        font-size: 43px;
+        line-height: 400px;
+    }
+
+    .pizza {
+        background-image: url("../img/1200_pizza-delivery-bg.jpg");
+    }
+
+    .salads {
+        background-image: url("../img/1200_salads-bg.jpg");
+    }
+
+    .desserts {
+        background-image: url("../img/1200_desserts-bg.jpg");
+    }
+
+    .menu-header {
+        font-size: 40px;
+    }
+
+    .menu-group-header {
+        font-size: 40px;
+    }
+
+    .menu-group-subheader {
+        font-size: 30px;
+    }
+
+    .menu__item-name {
+        font-size: 27px;
+    }
+
+    .menu__item-description {
+        font-size: 18px;
     }
 }
