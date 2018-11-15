@@ -54,7 +54,7 @@ a, li {
     box-shadow: inset 0 0 10px #000000;
 }
 
-.enabled {
+.dark-theme-enabled {
     left: -1px;
 }
 
