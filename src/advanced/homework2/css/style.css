@@ -24,7 +24,6 @@ html, body {
 .nav-menu__item {
     display: block;
     width: 100%;
-    padding: 10px;
 }
 
 .nav-menu__link {
@@ -102,7 +101,7 @@ html, body {
 }
 
 #burger-nav:checked ~ .nav-menu {
-    max-height: 161px;
+    max-height: 173px;
     width: 182px;
     font-size: 12px;
 }
@@ -345,6 +344,16 @@ footer {
         font-size: 24px;
         line-height: 74px;
     }
+
+    #burger-nav:checked ~ .nav-menu {
+    max-height: 346px;
+    width: 243px;
+    font-size: 14px;
+}
+
+.nav-menu__link {
+    padding: 14px;
+}
 
     .burger-line {
         width: 34px;
